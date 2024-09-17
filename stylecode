@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+  }
+  
+  body {
+    padding: 10px;
+    background: #3F4438;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  /* NAVIGATION BAR */
+
+  .topnav {
+    overflow: hidden;
+    background-color: #E8E2DD;
+    position: sticky;
+    top: 14;
+    height:60px;
+    border: 2px solid #A3AB96;
+    border-radius: 15px;
+  }
+  .topnav a {
+    float: left;
+    display: block;
+    color: #2C2E3D;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .topnav a:hover {
+    background-color: #A3AB96;
+    color: #2C2E3D;
+  }
+
+  /* CONTENT BOXES */
+
+  .leftcolumn {   
+    float: left;
+    width: 75%;
+  }
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #3F4438;
+    padding-left: 20px;
+  }
+  h2, h3, h5 {
+    color:#2C2E3D;
+    font-family: monospace;
+  }
+  
+  /* TEXT BOXES */
+
+  .textbox {
+    background-color: #E8E2DD;
+    display: table;
+    width: 100%;
+    padding: 20px;
+    color: #2C2E3D;
+    border: 2px solid #E8E2DD;
+    border-radius: 15px;
+  }
+  
+  /* RIGHT COLUMNS */
+
+  .card {
+    background-color: #A3AB96;
+    padding-top: 20px;
+    margin-top: 20px;
+    text-indent: 20px;
+    border: 2px solid #A3AB96;
+    border-radius: 15px;
+  }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* FOOTER */
+
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #E8E2DD;
+    color: #2C2E3D;
+    margin-top: 20px;
+    height: 50px;
+    border: 2px solid #E8E2DD;
+    border-radius: 15px;
+  }
+  
+  /* SCREEN SIZE RESPONSE */
+
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
